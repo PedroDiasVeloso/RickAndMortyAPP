@@ -1,0 +1,67 @@
+/* Style the header */
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    height: 300px;
+    background: url(https://coverfiles.alphacoders.com/523/thumb-1920-52309.jpg);
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  #marvel {
+    text-align: center;
+    top: 100px;
+  }
+
+
+  body{
+    background-color: rgb(120, 120, 243);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h1{
+    position: relative;
+    margin-top: 50px;
+    font-size: 70px;
+    color: rgb(73, 248, 239);
+    animation-name: buttonsAnime;
+    animation-duration: 6s;
+    animation-iteration-count: 10000000;
+  }
+
+  #theTable{
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+
+
+  @keyframes buttonsAnime{
+    0%   {left:0px; top:0px;}
+    25%  {left:-100px; top:0px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:-100px; top:0px;}
+    100% {left:0px; top:0px;}
+  }

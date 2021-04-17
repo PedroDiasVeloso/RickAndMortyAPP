@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script data-main="main"
+                   src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <link rel="stylesheet"  href="css/style.css"/>
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: rickFont;
+        src: url('get_schwifty.ttf');
+        font-weight: bold;
+    }
+    #body{
+        font-family: rickFont;
+        font-weight: bold;
+    }
+    #next,#beggining,#back,#previous{
+        position: relative;
+        top: 60px;
+        font-size: 15px;
+        font-family: rickFont;
+        font-weight: bold;
+        
+    }
+    #searchButton{
+        position: relative;
+        font-size: 15px;
+        font-family: rickFont;
+        font-weight: bold;
+    }
+</style>
+<body id ="body">
+
+    <div class="header" id="myHeader">
+        
+        <form id="marvel">
+            Search<input id="search" type="text">
+
+            <button id="searchButton" type= "button">Search</button>
+        </form>
+
+        <div id="">
+
+        </div>
+      </div>
+
+    <div id="app"></div>
+    <table id="theTable" ></table>
+    
+</body>
+</html>
